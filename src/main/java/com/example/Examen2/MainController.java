@@ -28,7 +28,7 @@ public class MainController {
 	@Autowired
   	private JdbcTemplate jdbcTemplate;
 
-	@PostMapping(path="/add") // Map ONLY POST Requests
+	@PostMapping(path="/nuevo") // Map ONLY POST Requests
 	public @ResponseBody String addNewUser (@RequestParam String name
 			, @RequestParam String credito) {
 		User n = new User();
@@ -38,7 +38,7 @@ public class MainController {
 		return "Saved";
 	}
 
-	@DeleteMapping(path="/del")
+	@DeleteMapping(path="/eliminar")
 	public @ResponseBody String delUser (@RequestParam Integer id) {
 		User n = new User();
 		n.setId(id);
@@ -58,7 +58,7 @@ public class MainController {
 	}
 
 
-	@GetMapping(path="/all")
+	@GetMapping(path="/listar")
 	public @ResponseBody Iterable<User> getAllUsers() {
 		return userRepository.findAll();
 	}

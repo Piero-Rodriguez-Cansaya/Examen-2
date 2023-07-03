@@ -37,7 +37,7 @@ public class User {
 		return credito;
 	}
 
-	public void setCredito(String email) {
+	public void setCredito(String credito) {
 		this.credito = credito;
 	}
 }
