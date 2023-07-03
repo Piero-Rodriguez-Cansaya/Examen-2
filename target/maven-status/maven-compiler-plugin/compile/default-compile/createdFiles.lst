@@ -1,2 +1,5 @@
 com/example/Examen2/Examen2Application.class
+com/example/Examen2/UserRepository.class
 com/example/Examen2/Controller.class
+com/example/Examen2/MainController.class
+com/example/Examen2/User.class
